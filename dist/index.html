@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacitve rating</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-VeryDarkBlue flex justify-center items-center mt-20">
+    <section class="rating container flex flex-col w-[375px] lg:w-[500px] bg-DarkBlue rounded-xl">
+        <div
+            class="grafic container flex justify-center items-center bg-slate-700 rounded-full w-12 h-12 mx-6 mt-6 mb-3 lg:mb-5 lg:mx-10">
+            <img src="../img/icon-star.svg" class="w-4 h-4" alt="">
+        </div>
+        <p class="text-white text-3xl mx-6 mt-3 mb-3 lg:mx-10">How did we do?</p>
+        <p class="text-LightGrey text-md mx-6 mt-0 mb-5 lg:mx-10">Please let us know how we did with your support<br> request. All
+            feedback is appreciated
+            to help us<br> improve our offering!</p>
+        <ul class="flex flex-row justify-center gap-5 lg:gap-8 mb-2 lg:mt-4">
+            <li>
+                <button class="bg-slate-700 flex justify-center items-center text-LightGrey rounded-full w-12 h-12 lg:w-14 lg:h-14 text-md hover:bg-Orange hover:text-white cursor-pointer rate focus:bg-MediumGrey focus:text-white" type='button' id="one" value="1">1</button>
+            </li>
+            <li>
+                <button class="bg-slate-700 flex justify-center items-center text-LightGrey rounded-full w-12 h-12 lg:w-14 lg:h-14 text-md hover:bg-Orange hover:text-white cursor-pointer rate focus:bg-MediumGrey focus:text-white" type='button' id="two" value="2">2</button>
+            </li>
+            <li>
+                <button class="bg-slate-700 flex justify-center items-center text-LightGrey rounded-full w-12 h-12 lg:w-14 lg:h-14 text-md hover:bg-Orange hover:text-white cursor-pointer rate focus:bg-MediumGrey focus:text-white" type='button' id="three" value="3">3</button>
+            </li>
+            <li>
+                <button class="bg-slate-700 flex justify-center items-center text-LightGrey rounded-full w-12 h-12 lg:w-14 lg:h-14 text-md hover:bg-Orange hover:text-white cursor-pointer rate focus:bg-MediumGrey focus:text-white" type='button' id="four" value="4">4</button>
+            </li>
+            <li>
+                <button class="bg-slate-700 flex justify-center items-center text-LightGrey rounded-full w-12 h-12 lg:w-14 lg:h-14 text-md hover:bg-Orange hover:text-white cursor-pointer rate focus:bg-MediumGrey focus:text-white" type='button' id="five" value="5">5</button>
+            </li>
+        </ul>
+        <div class="flex justify-center items-center mt-5 lg:mt-8 mb-8 lg:mb-10">
+            <button
+            class="uppercase text-center font-bold text-white bg-Orange tracking-[1px] rounded-full w-[320px] p-3 lg:w-[400px] hover:bg-white hover:text-Orange cursor-pointer transition-colors" id="btn">submit</button>
+        </div>
+    </section>
+
+    <section class="feedback hidden container flex flex-col justify-center items-center bg bg-DarkBlue w-[375px] lg:w-[500px] rounded-xl">
+        <img src="../img/illustration-thank-you.svg" class="w-[150px] lg:w-[200px] h-[100px] lg:h-[140px] self-center m-10" alt="">
+        <p class="text-Orange text-center self-center text-md bg-slate-700 py-2 rounded-full mb-7 px-4">You selected <span class="Choice">-</span> out of 5</p>
+        <p class="text-white text-3xl lg:text-4xl font-semibold lg:mt-4">Thank you!</p>
+        <p class="text-LightGrey text-center text-md lg:text-lg mx-6 mt-5 mb-8 lg:mb-12">We appreciate you taking the time to give a rating.<br> If you ever need more support, don’t hesitate to<br> get in touch!</p>
+
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
